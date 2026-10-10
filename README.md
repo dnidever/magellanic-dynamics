@@ -55,3 +55,15 @@ fixed-MW behavior, forward/backward round-trip, SMC/tracer shape checks, and
 sampling-convergence checks. Gala 1.12.0 was used for development.
 
 Gala reference: https://gala.adrian.pw/en/v1.12.0/
+
+## Views and runtime
+
+The default view shows XY, XZ and YZ together. Choose `3D without WebGL`
+for a server-rendered view rotated with elevation/azimuth sliders, or
+`Interactive 3D (WebGL)` for mouse rotation when the browser supports WebGL.
+
+The app starts with zero massless tracers for fast galaxy integrations.
+The backend retains the notebook's ten-tracer default. Tight tracer orbits
+around the compact LMC force many adaptive steps; enabling friction uses a
+slower Python integrator. Identical app setups are cached (up to eight runs),
+and integration time is displayed. Plot controls do not reintegrate orbits.
