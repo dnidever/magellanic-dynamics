@@ -1,0 +1,7 @@
+gala==1.12.0
+streamlit>=1.40,<2
+astropy>=6,<9
+numpy>=2,<3
+scipy>=1.13,<2
+pandas>=2,<4
+plotly>=5,<8
